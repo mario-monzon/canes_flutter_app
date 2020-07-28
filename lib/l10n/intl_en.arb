@@ -1,0 +1,14 @@
+{
+  "appName": "Canes App",
+  "tab1": "Tab 1",
+  "tab2": "Tab 2",
+  "tab3": "Tab 3",
+  "tab4": "Tab 4",
+  "tab5": "Tab 5",
+  "this_is_detail_tap": "This is detail of",
+  "go_to_details": "Detail",
+  "errorNetworkGeneric": "There was a problem",
+  "errorNetworkServer": "We are having problems with our service",
+  "errorNetworkUnauthorized": "You are not authorized",
+  "test": "Test"
+}
