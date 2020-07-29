@@ -19,9 +19,10 @@ class MainBottomNavigation extends StatelessWidget {
 
   BottomNavigationBarItem _buildNavItem(String img, String label, {int count}) {
     return BottomNavigationBarItem(
+      backgroundColor: Colors.grey,
       activeIcon: BottomMenuIcon(
         iconAsset: img,
-        color: AppColors.defaultColor,
+        color: Colors.amber,
         count: count,
       ),
       icon: BottomMenuIcon(
@@ -29,7 +30,10 @@ class MainBottomNavigation extends StatelessWidget {
         color: AppColors.disabledColor,
         count: count,
       ),
-      title: Text(label),
+      title: Text(
+        label,
+        style: TextStyle(color: Colors.amber),
+      ),
     );
   }
 
@@ -37,6 +41,7 @@ class MainBottomNavigation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<MainMenuState>(
       builder: (context, state, child) => BottomNavigationBar(
+        backgroundColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         items: [
           _buildNavItem(

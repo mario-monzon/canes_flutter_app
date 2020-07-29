@@ -17,7 +17,7 @@ mixin AppTheme {
       textTheme: mainTextTheme,
     ),
     textTheme: mainTextTheme,
-    fontFamily: 'Brush',
+    fontFamily: 'Canes_font',
     iconTheme: const IconThemeData(color: AppColors.defaultColor),
     buttonTheme: const ButtonThemeData(buttonColor: AppColors.backgroundColor),
   );

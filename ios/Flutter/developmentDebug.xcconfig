@@ -3,4 +3,4 @@
 FLUTTER_TARGET=lib/main-development.dart
 
 ASSET_PREFIX=development
-BUNDLE_NAME=Canes Dev
+BUNDLE_NAME=Canes App Dev
