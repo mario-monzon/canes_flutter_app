@@ -52,6 +52,32 @@ android {
         }
     }
 
+
+    flavorDimensions "flavor-type"
+
+    productFlavors {
+        development {
+            dimension "flavor-type"
+            applicationId "es.aytha.canesapp.android.dev"
+            resValue "string", "app_name", "Canes Dev"
+        }
+        qa {
+            dimension "flavor-type"
+            applicationId "es.aytha.canesapp.android.qa"
+            resValue "string", "app_name", "Canes QA"
+        }
+        uat {
+            dimension "flavor-type"
+            applicationId "es.aytha.canesapp.android.uat"
+            resValue "string", "app_name", "Canes UAT"
+        }
+        production {
+            dimension "flavor-type"
+            applicationId "es.aytha.canesapp.android"
+            resValue "string", "app_name", "Canes"
+        }
+    }
+
     compileSdkVersion 28
 
     sourceSets {
@@ -87,4 +113,5 @@ flutter {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
+
 

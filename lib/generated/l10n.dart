@@ -43,50 +43,50 @@ class S {
     );
   }
 
-  /// `Tab 1`
+  /// `Home`
   String get tab1 {
     return Intl.message(
-      'Tab 1',
+      'Home',
       name: 'tab1',
       desc: '',
       args: [],
     );
   }
 
-  /// `Tab 2`
+  /// `Team`
   String get tab2 {
     return Intl.message(
-      'Tab 2',
+      'Team',
       name: 'tab2',
       desc: '',
       args: [],
     );
   }
 
-  /// `Tab 3`
+  /// `Scores`
   String get tab3 {
     return Intl.message(
-      'Tab 3',
+      'Scores',
       name: 'tab3',
       desc: '',
       args: [],
     );
   }
 
-  /// `Tab 4`
+  /// `Sponsor`
   String get tab4 {
     return Intl.message(
-      'Tab 4',
+      'Sponsor',
       name: 'tab4',
       desc: '',
       args: [],
     );
   }
 
-  /// `Tab 5`
+  /// `Contact`
   String get tab5 {
     return Intl.message(
-      'Tab 5',
+      'Contact',
       name: 'tab5',
       desc: '',
       args: [],

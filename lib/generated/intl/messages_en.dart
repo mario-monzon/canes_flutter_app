@@ -26,11 +26,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "errorNetworkServer" : MessageLookupByLibrary.simpleMessage("We are having problems with our service"),
     "errorNetworkUnauthorized" : MessageLookupByLibrary.simpleMessage("You are not authorized"),
     "go_to_details" : MessageLookupByLibrary.simpleMessage("Detail"),
-    "tab1" : MessageLookupByLibrary.simpleMessage("Tab 1"),
-    "tab2" : MessageLookupByLibrary.simpleMessage("Tab 2"),
-    "tab3" : MessageLookupByLibrary.simpleMessage("Tab 3"),
-    "tab4" : MessageLookupByLibrary.simpleMessage("Tab 4"),
-    "tab5" : MessageLookupByLibrary.simpleMessage("Tab 5"),
+    "tab1" : MessageLookupByLibrary.simpleMessage("Home"),
+    "tab2" : MessageLookupByLibrary.simpleMessage("Team"),
+    "tab3" : MessageLookupByLibrary.simpleMessage("Scores"),
+    "tab4" : MessageLookupByLibrary.simpleMessage("Sponsor"),
+    "tab5" : MessageLookupByLibrary.simpleMessage("Contact"),
     "test" : MessageLookupByLibrary.simpleMessage("Test"),
     "this_is_detail_tap" : MessageLookupByLibrary.simpleMessage("This is detail of")
   };
