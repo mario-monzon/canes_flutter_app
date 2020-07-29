@@ -22,16 +22,22 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "appName" : MessageLookupByLibrary.simpleMessage("Canes App"),
+    "contact" : MessageLookupByLibrary.simpleMessage("Contact"),
+    "email" : MessageLookupByLibrary.simpleMessage("Email: canes.fa@gmail.com"),
     "errorNetworkGeneric" : MessageLookupByLibrary.simpleMessage("There was a problem"),
     "errorNetworkServer" : MessageLookupByLibrary.simpleMessage("We are having problems with our service"),
     "errorNetworkUnauthorized" : MessageLookupByLibrary.simpleMessage("You are not authorized"),
     "go_to_details" : MessageLookupByLibrary.simpleMessage("Detail"),
+    "phone" : MessageLookupByLibrary.simpleMessage("Phone: xxx-xx-xx-xx"),
+    "schedule_days" : MessageLookupByLibrary.simpleMessage("Tuesday - Wednesday - Thursday"),
+    "schedule_hours" : MessageLookupByLibrary.simpleMessage("20:30 - 22:00"),
     "tab1" : MessageLookupByLibrary.simpleMessage("Home"),
     "tab2" : MessageLookupByLibrary.simpleMessage("Team"),
     "tab3" : MessageLookupByLibrary.simpleMessage("Scores"),
     "tab4" : MessageLookupByLibrary.simpleMessage("Sponsor"),
     "tab5" : MessageLookupByLibrary.simpleMessage("Contact"),
     "test" : MessageLookupByLibrary.simpleMessage("Test"),
-    "this_is_detail_tap" : MessageLookupByLibrary.simpleMessage("This is detail of")
+    "this_is_detail_tap" : MessageLookupByLibrary.simpleMessage("This is detail of"),
+    "training_days" : MessageLookupByLibrary.simpleMessage("Trainings Days")
   };
 }

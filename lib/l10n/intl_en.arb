@@ -10,5 +10,11 @@
   "errorNetworkGeneric": "There was a problem",
   "errorNetworkServer": "We are having problems with our service",
   "errorNetworkUnauthorized": "You are not authorized",
-  "test": "Test"
+  "test": "Test",
+  "training_days": "Trainings Days",
+  "schedule_days": "Tuesday - Wednesday - Thursday",
+  "schedule_hours": "20:30 - 22:00",
+  "contact": "Contact",
+  "email": "Email: canes.fa@gmail.com",
+  "phone": "Phone: xxx-xx-xx-xx"
 }

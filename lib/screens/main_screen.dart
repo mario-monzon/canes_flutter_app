@@ -5,11 +5,11 @@ import '../design/design_breakpoints.dart';
 import '../state/navigation_state.dart';
 import '../widget/general/lateral_menu.dart';
 import '../widget/general/main_bottom_navigation.dart';
+import 'tabs/contact.dart';
 import 'tabs/tab_1.dart';
 import 'tabs/tab_2.dart';
 import 'tabs/tab_3.dart';
 import 'tabs/tab_4.dart';
-import 'tabs/tab_5.dart';
 
 /// Main screen of the app, from which all other content hangs
 class MainScreen extends StatefulWidget {

@@ -45,15 +45,15 @@ class MainBottomNavigation extends StatelessWidget {
         type: BottomNavigationBarType.fixed,
         items: [
           _buildNavItem(
-              Img.share, _buildPageTitle(context, MainTab.tap_1.index)),
+              Img.home, _buildPageTitle(context, MainTab.tap_1.index)),
           _buildNavItem(
-              Img.share, _buildPageTitle(context, MainTab.tap_2.index)),
+              Img.team, _buildPageTitle(context, MainTab.tap_2.index)),
           _buildNavItem(
-              Img.share, _buildPageTitle(context, MainTab.tap_3.index)),
+              Img.score, _buildPageTitle(context, MainTab.tap_3.index)),
           _buildNavItem(
-              Img.share, _buildPageTitle(context, MainTab.tap_4.index)),
+              Img.sponsor, _buildPageTitle(context, MainTab.tap_4.index)),
           _buildNavItem(
-              Img.share, _buildPageTitle(context, MainTab.tap_5.index)),
+              Img.contact, _buildPageTitle(context, MainTab.tap_5.index)),
         ],
         currentIndex: state.selectedOption,
         selectedItemColor: AppColors.defaultColor,

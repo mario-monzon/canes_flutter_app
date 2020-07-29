@@ -1,3 +1,5 @@
+import 'package:canes_app/widget/contact/contact_datas_widget.dart';
+import 'package:canes_app/widget/contact/training_days_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/design_breakpoints.dart';
@@ -33,20 +35,15 @@ class Tab5Screen extends StatelessWidget {
                                   ),
                           ),
                           body: Center(
-                              child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
+                              child: Stack(
+                                  alignment: Alignment.topCenter,
                                   children: [
-                                Text(S.of(context).tab5),
-                                FlatButton(
-                                  color: Colors.grey,
-                                  onPressed: () {
-                                    Navigator.pushNamed(context,
-                                        NestedNavigationRouter.tapDetail,
-                                        arguments: S.of(context).tab5);
-                                  },
-                                  child: Text(S.of(context).go_to_details,
-                                      style: TextStyle(color: Colors.white)),
-                                ),
+                                Column(
+                                  children: <Widget>[
+                                    ContactDatasWidget(),
+                                    TrainingDaysWidget(),
+                                  ],
+                                )
                               ])))));
             }));
   }

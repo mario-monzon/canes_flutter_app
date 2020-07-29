@@ -152,6 +152,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Trainings Days`
+  String get training_days {
+    return Intl.message(
+      'Trainings Days',
+      name: 'training_days',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tuesday - Wednesday - Thursday`
+  String get schedule_days {
+    return Intl.message(
+      'Tuesday - Wednesday - Thursday',
+      name: 'schedule_days',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `20:30 - 22:00`
+  String get schedule_hours {
+    return Intl.message(
+      '20:30 - 22:00',
+      name: 'schedule_hours',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contact`
+  String get contact {
+    return Intl.message(
+      'Contact',
+      name: 'contact',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email: canes.fa@gmail.com`
+  String get email {
+    return Intl.message(
+      'Email: canes.fa@gmail.com',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone: xxx-xx-xx-xx`
+  String get phone {
+    return Intl.message(
+      'Phone: xxx-xx-xx-xx',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
