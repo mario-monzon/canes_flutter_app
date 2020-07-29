@@ -27,7 +27,7 @@ class StadiumContactStatus extends State<StadiumContactWidget> {
 
     _stadiumMarker = Marker(
         markerId: MarkerId("stadium"),
-        position: _kGooglePlex.target,
+        position: LatLng(28.0017408, -15.4042811),
         infoWindow: InfoWindow(
             title: "Anexo Campo de fútbol Paco Hernandez",
             snippet: "Calle Hornillo, 18, 35213 Telde, Las Palmas"));
