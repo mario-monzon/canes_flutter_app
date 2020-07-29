@@ -14,6 +14,7 @@ mixin AppTheme {
     splashColor: AppColors.defaultColor.withOpacity(0.2),
     highlightColor: AppColors.defaultColor.withOpacity(0.1),
     appBarTheme: AppBarTheme(
+      color: Colors.amber,
       textTheme: mainTextTheme,
     ),
     textTheme: mainTextTheme,
@@ -88,66 +89,79 @@ mixin AppTheme {
   static final TextTheme mainTextTheme = TextTheme(
     headline1: _baseMainTextStyle.copyWith(
       fontSize: 96,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w300,
       letterSpacing: -1.5,
     ),
     headline2: _baseMainTextStyle.copyWith(
       fontSize: 60,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w300,
       letterSpacing: -0.5,
     ),
     headline3: _baseMainTextStyle.copyWith(
       fontSize: 48,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w400,
       letterSpacing: 0.0,
     ),
     headline4: _baseMainTextStyle.copyWith(
       fontSize: 34,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w400,
       letterSpacing: 0.25,
     ),
     headline5: _baseMainTextStyle.copyWith(
       fontSize: 24,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w400,
       letterSpacing: 0.0,
     ),
     headline6: _baseMainTextStyle.copyWith(
       fontSize: 20,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w500,
       letterSpacing: 0.15,
     ),
     subtitle1: _baseMainTextStyle.copyWith(
       fontSize: 16,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w400,
       letterSpacing: 0.15,
     ),
     subtitle2: _baseMainTextStyle.copyWith(
       fontSize: 14,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w500,
       letterSpacing: 0.10,
     ),
     bodyText1: _baseMainTextStyle.copyWith(
       fontSize: 16,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w400,
       letterSpacing: 0.5,
     ),
     bodyText2: _baseMainTextStyle.copyWith(
       fontSize: 14,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w400,
       letterSpacing: 0.25,
     ),
     button: _baseMainTextStyle.copyWith(
       fontSize: 14,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w500,
       letterSpacing: 0.75,
     ),
     caption: _baseMainTextStyle.copyWith(
       fontSize: 12,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w400,
       letterSpacing: 0.4,
     ),
     overline: _baseMainTextStyle.copyWith(
       fontSize: 10,
+      fontFamily: 'Canes_font',
       fontWeight: FontWeight.w400,
       letterSpacing: 1.5,
     ),
