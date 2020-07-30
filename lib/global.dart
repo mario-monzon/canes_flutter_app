@@ -16,9 +16,7 @@ class Global {
   ApiService api;
 
   /// Recreates the api object with a new base url
-  void initializeApi(
-    String baseUrl,
-    String language,
-    int shopId,
-  ) {}
+  void initializeApi() {
+    api = ApiService.create();
+  }
 }
