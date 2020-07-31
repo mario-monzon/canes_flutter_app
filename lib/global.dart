@@ -7,6 +7,7 @@ class Global {
     return _global;
   }
 
+  static final String webCanes = 'http://teldecanes.es/index.php/en/';
   Global._internal();
 
   // this is a global singleton

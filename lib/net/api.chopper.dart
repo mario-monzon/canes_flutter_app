@@ -24,17 +24,16 @@ class _$ApiService extends ApiService {
   }
 
   @override
-  Future<Response<dynamic>> getPost(int id) {
+  Future<Response<News>> getPost(int id) {
     final $url = 'https://jsonplaceholder.typicode.com/posts/$id';
     final $request = Request('GET', $url, client.baseUrl);
-    return client.send<dynamic, dynamic>($request);
+    return client.send<News, News>($request);
   }
 
   @override
-  Future<Response<dynamic>> postPost(Map<String, dynamic> body) {
+  Future<Response<List<News>>> postPost() {
     final $url = 'https://jsonplaceholder.typicode.com/posts';
-    final $body = body;
-    final $request = Request('POST', $url, client.baseUrl, body: $body);
-    return client.send<dynamic, dynamic>($request);
+    final $request = Request('GET', $url, client.baseUrl);
+    return client.send<List<News>, News>($request);
   }
 }

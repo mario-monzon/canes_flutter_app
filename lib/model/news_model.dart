@@ -4,6 +4,12 @@ part 'news_model.g.dart';
 
 @JsonSerializable(nullable: false, explicitToJson: true)
 class News {
+  // ignore: public_member_api_docs
+  factory News.fromJson(Map<String, dynamic> json) => _$NewsFromJson(json);
+
+  // ignore: public_member_api_docs
+  Map<String, dynamic> toJson() => _$NewsToJson(this);
+
   News({
     this.id,
     this.userId,
@@ -22,10 +28,4 @@ class News {
 
   @JsonKey(name: 'body', nullable: false)
   String body;
-
-// ignore: public_member_api_docs
-  factory News.fromJson(Map<String, dynamic> json) => _$NewsFromJson(json);
-
-  // ignore: public_member_api_docs
-  Map<String, dynamic> toJson() => _$NewsToJson(this);
 }

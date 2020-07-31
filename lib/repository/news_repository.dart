@@ -9,7 +9,7 @@ class NewsRepository {
     Global().initializeApi();
 
     final call = StandardApiCall<List<News>>(
-        () => Global().api.getPosts(), resource,
+        () => Global().api.postPost(), resource,
         retryForever: true);
 
     call.call();

@@ -1,9 +1,9 @@
 import 'package:canes_app/screens/main_screen.dart';
 import 'package:canes_app/screens/tabs/contact.dart';
-import 'package:canes_app/screens/tabs/tab_1.dart';
-import 'package:canes_app/screens/tabs/tab_2.dart';
-import 'package:canes_app/screens/tabs/tab_3.dart';
-import 'package:canes_app/screens/tabs/tab_4.dart';
+import 'package:canes_app/screens/tabs/home.dart';
+import 'package:canes_app/screens/tabs/scores.dart';
+import 'package:canes_app/screens/tabs/sponsors.dart';
+import 'package:canes_app/screens/tabs/team.dart';
 import 'package:canes_app/state/locale_state.dart';
 import 'package:canes_app/state/navigation_state.dart';
 import 'package:canes_app/widget/general/main_bottom_navigation.dart';

@@ -27,7 +27,13 @@ class LateralMenu extends StatelessWidget {
             child: ListTile(
               selected: state.selectedOption == index,
               leading: SvgPicture.asset(
-                [Img.share, Img.share, Img.share, Img.share, Img.share][index],
+                [
+                  Img.home,
+                  Img.team,
+                  Img.score,
+                  Img.sponsor,
+                  Img.contact
+                ][index],
                 color: AppColors.defaultColor,
               ),
               title: Row(

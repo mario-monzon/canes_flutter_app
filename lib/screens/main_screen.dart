@@ -1,3 +1,4 @@
+import 'package:canes_app/repository/news_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -6,10 +7,10 @@ import '../state/navigation_state.dart';
 import '../widget/general/lateral_menu.dart';
 import '../widget/general/main_bottom_navigation.dart';
 import 'tabs/contact.dart';
-import 'tabs/tab_1.dart';
-import 'tabs/tab_2.dart';
-import 'tabs/tab_3.dart';
-import 'tabs/tab_4.dart';
+import 'tabs/home.dart';
+import 'tabs/scores.dart';
+import 'tabs/sponsors.dart';
+import 'tabs/team.dart';
 
 /// Main screen of the app, from which all other content hangs
 class MainScreen extends StatefulWidget {
@@ -71,6 +72,9 @@ class _MainScreenState extends State<MainScreen> {
           ChangeNotifierProvider(
             create: (context) => MainMenuState(),
           ),
+          ChangeNotifierProvider(
+            create: (context) => NewsRepository.getNewsResourceRetry(),
+          )
         ],
         child: Consumer<MainMenuState>(builder: (context, state, child) {
           // if the user select the same tab two times, all the

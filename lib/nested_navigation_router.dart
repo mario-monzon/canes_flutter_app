@@ -1,3 +1,4 @@
+import 'package:canes_app/screens/home/news_details.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/tabs/tab_detail.dart';
@@ -17,6 +18,8 @@ class NestedNavigationRouter implements NavigationRouterInterface {
   /// News details screen route
   static const tapDetail = 'tabs/tab_detail';
 
+  static const newsDetail = 'home/news_details';
+
   @override
   WidgetBuilder initialRouteBuilder(BuildContext context) => builder(context);
 
@@ -26,6 +29,8 @@ class NestedNavigationRouter implements NavigationRouterInterface {
     switch (routeName) {
       case tapDetail:
         return (context) => const TabDetailScreen();
+      case newsDetail:
+        return (context) => const NewsDetailScreen();
     }
   }
 }

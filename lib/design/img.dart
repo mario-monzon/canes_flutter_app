@@ -7,4 +7,5 @@ class Img {
   static const String score = 'assets/images/score.svg';
   static const String sponsor = 'assets/images/sponsor.svg';
   static const String contact = 'assets/images/contact.svg';
+  static const String canes = 'assets/images/canes.png';
 }

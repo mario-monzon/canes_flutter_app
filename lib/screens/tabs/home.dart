@@ -1,3 +1,4 @@
+import 'package:canes_app/widget/home/news_list_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/design_breakpoints.dart';
@@ -6,9 +7,9 @@ import '../../nested_navigation_router.dart';
 import '../../widget/general/nested_navigator.dart';
 
 // ignore: public_member_api_docs
-class Tab2Screen extends StatelessWidget {
+class Tab1Screen extends StatelessWidget {
   // ignore: public_member_api_docs
-  const Tab2Screen({@required this.navigatorKey});
+  const Tab1Screen({@required this.navigatorKey});
 
   /// The unique key for the nested navigator of this screen
   final GlobalKey<NavigatorState> navigatorKey;
@@ -18,13 +19,13 @@ class Tab2Screen extends StatelessWidget {
     return NestedNavigator(
         navigatorKey: navigatorKey,
         navigationRoutes: NestedNavigationRouter(
-            initialRoute: 'tap_2',
+            initialRoute: 'tap_1',
             builder: (context) {
               return (context) => LayoutBuilder(
                   builder: (context, constraints) => Container(
                       child: Scaffold(
                           appBar: AppBar(
-                            title: Text(S.of(context).tab2),
+                            title: Text(S.of(context).tab1),
                             leading: constraints.maxHeight >= Breakpoints.br480
                                 ? null
                                 : IconButton(
@@ -34,22 +35,7 @@ class Tab2Screen extends StatelessWidget {
                                     },
                                   ),
                           ),
-                          body: Center(
-                              child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                Text(S.of(context).tab2),
-                                FlatButton(
-                                  color: Colors.grey,
-                                  onPressed: () {
-                                    Navigator.pushNamed(context,
-                                        NestedNavigationRouter.tapDetail,
-                                        arguments: S.of(context).tab2);
-                                  },
-                                  child: Text(S.of(context).go_to_details,
-                                      style: TextStyle(color: Colors.white)),
-                                ),
-                              ])))));
+                          body: NewsListWidget())));
             }));
   }
 }
