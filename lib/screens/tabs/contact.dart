@@ -1,4 +1,5 @@
 import 'package:canes_app/widget/contact/contact_datas_widget.dart';
+import 'package:canes_app/widget/contact/contact_social_buttons_widget.dart';
 import 'package:canes_app/widget/contact/training_days_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -42,6 +43,7 @@ class Tab5Screen extends StatelessWidget {
                                   children: <Widget>[
                                     ContactDatasWidget(),
                                     TrainingDaysWidget(),
+                                    SocialButtonsWidget(),
                                   ],
                                 )
                               ])))));

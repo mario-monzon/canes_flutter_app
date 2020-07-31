@@ -12,38 +12,42 @@ class ContactDatasWidget extends StatelessWidget {
       shadowColor: Colors.grey,
       child: Padding(
         padding: EdgeInsets.all(10),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(S.of(context).contact),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 8, top: 8),
-              child: Text(
-                S.of(context).email,
-                style: TextStyle(fontFamily: "Canes_font_body"),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 8),
-              child: Text(S.of(context).phone,
-                  style: TextStyle(fontFamily: "Canes_font_body")),
-            ),
-            Padding(
-                padding: const EdgeInsets.only(bottom: 8),
-                child: GestureDetector(
-                  onTap: () async {
-                    if (await canLaunch(Global.webCanes)) {
-                      launch(Global.webCanes);
-                    } else {
-                      Scaffold.of(context).showSnackBar(SnackBar(
-                        content: Text("Web no found"),
-                      ));
-                    }
-                  },
-                  child: Text('Web: http://www.teldecanes.es',
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(S.of(context).contact),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8, top: 8),
+                  child: Text(
+                    S.of(context).email,
+                    style: TextStyle(fontFamily: "Canes_font_body"),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Text(S.of(context).phone,
                       style: TextStyle(fontFamily: "Canes_font_body")),
-                )),
+                ),
+                Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: GestureDetector(
+                      onTap: () async {
+                        if (await canLaunch(Global.webCanes)) {
+                          launch(Global.webCanes);
+                        } else {
+                          Scaffold.of(context).showSnackBar(SnackBar(
+                            content: Text("Web no found"),
+                          ));
+                        }
+                      },
+                      child: Text('Web: http://www.teldecanes.es',
+                          style: TextStyle(fontFamily: "Canes_font_body")),
+                    )),
+              ],
+            ),
           ],
         ),
       ),

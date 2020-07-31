@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'net/api.dart';
 
 /// Global scope app singleton, for initializations needed app wide
@@ -8,6 +10,14 @@ class Global {
   }
 
   static final String webCanes = 'http://teldecanes.es/index.php/en/';
+  static final String facebookCanes = Platform.isIOS
+      ? 'fb://profile/1931826973734524'
+      : 'fb://page/1931826973734524';
+  static final String instagramCanes =
+      'https://www.instagram.com/canes_american_football/?hl=es';
+  static final String twitterCanes =
+      'https://twitter.com/footballcanes?lang=es';
+
   Global._internal();
 
   // this is a global singleton

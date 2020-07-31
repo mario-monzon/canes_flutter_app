@@ -8,4 +8,7 @@ class Img {
   static const String sponsor = 'assets/images/sponsor.svg';
   static const String contact = 'assets/images/contact.svg';
   static const String canes = 'assets/images/canes.png';
+  static const String facebook = 'assets/images/facebook.svg';
+  static const String instagram = 'assets/images/instagram.svg';
+  static const String twitter = 'assets/images/twitter.svg';
 }
