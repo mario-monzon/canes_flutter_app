@@ -14,7 +14,7 @@ class TestableWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Global().initializeApi('x', 'en', 16);
+    Global().initializeApi();
 
     return MediaQuery(
         data: const MediaQueryData(),

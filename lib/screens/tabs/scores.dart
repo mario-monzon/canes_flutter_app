@@ -1,5 +1,6 @@
 import 'package:canes_app/widget/scores/scores/score_list_widget.dart';
 import 'package:canes_app/widget/scores/standings/StandingListWidget.dart';
+import 'package:canes_app/widget/util/tab_right_separator.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/design_breakpoints.dart';
@@ -40,8 +41,11 @@ class Tab3Screen extends StatelessWidget {
                                             },
                                           ),
                                 bottom: TabBar(
+                                  indicatorSize: TabBarIndicatorSize.tab,
+                                  labelPadding: EdgeInsets.all(0),
+                                  indicatorPadding: EdgeInsets.all(0),
                                   tabs: <Widget>[
-                                    Tab(text: 'Standing'),
+                                    TabRightSeparator(text: 'Standing'),
                                     Tab(
                                       text: 'Scores',
                                     )

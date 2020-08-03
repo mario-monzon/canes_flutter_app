@@ -1,4 +1,5 @@
 import 'package:canes_app/widget/home/news_list_widget.dart';
+import 'package:canes_app/widget/util/tab_right_separator.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/design_breakpoints.dart';
@@ -23,19 +24,36 @@ class Tab1Screen extends StatelessWidget {
             builder: (context) {
               return (context) => LayoutBuilder(
                   builder: (context, constraints) => Container(
-                      child: Scaffold(
-                          appBar: AppBar(
-                            title: Text(S.of(context).tab1),
-                            leading: constraints.maxHeight >= Breakpoints.br480
-                                ? null
-                                : IconButton(
-                                    icon: Icon(Icons.menu),
-                                    onPressed: () {
-                                      Scaffold.of(context).openDrawer();
-                                    },
-                                  ),
-                          ),
-                          body: NewsListWidget())));
+                      child: DefaultTabController(
+                          length: 2,
+                          child: Scaffold(
+                            appBar: AppBar(
+                                title: Text(S.of(context).tab1),
+                                leading:
+                                    constraints.maxHeight >= Breakpoints.br480
+                                        ? null
+                                        : IconButton(
+                                            icon: Icon(Icons.menu),
+                                            onPressed: () {
+                                              Scaffold.of(context).openDrawer();
+                                            },
+                                          ),
+                                bottom: TabBar(
+                                  indicatorSize: TabBarIndicatorSize.tab,
+                                  labelPadding: EdgeInsets.all(0),
+                                  indicatorPadding: EdgeInsets.all(0),
+                                  tabs: [
+                                    TabRightSeparator(text: 'News'),
+                                    Tab(
+                                      text: 'Releases',
+                                    )
+                                  ],
+                                )),
+                            body: TabBarView(children: <Widget>[
+                              NewsListWidget(),
+                              NewsListWidget()
+                            ]),
+                          ))));
             }));
   }
 }
