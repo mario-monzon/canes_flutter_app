@@ -143,7 +143,7 @@ mixin AppTheme {
     ),
     bodyText2: _baseMainTextStyle.copyWith(
       fontSize: 14,
-      fontFamily: 'Canes_font',
+      fontFamily: 'Canes_font_body',
       fontWeight: FontWeight.w400,
       letterSpacing: 0.25,
     ),
@@ -160,8 +160,9 @@ mixin AppTheme {
       letterSpacing: 0.4,
     ),
     overline: _baseMainTextStyle.copyWith(
-      fontSize: 10,
-      fontFamily: 'Canes_font',
+      fontSize: 8,
+      color: Colors.grey,
+      fontFamily: 'Canes_font_body',
       fontWeight: FontWeight.w400,
       letterSpacing: 1.5,
     ),

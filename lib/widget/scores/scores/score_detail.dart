@@ -1,6 +1,6 @@
 import 'package:canes_app/model/match_model.dart';
-import 'package:canes_app/widget/scores/score_local_team.dart';
-import 'package:canes_app/widget/scores/score_visit_team.dart';
+import 'package:canes_app/widget/scores/scores/score_local_team.dart';
+import 'package:canes_app/widget/scores/scores/score_visit_team.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

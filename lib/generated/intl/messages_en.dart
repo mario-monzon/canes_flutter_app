@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "errorNetworkUnauthorized" : MessageLookupByLibrary.simpleMessage("You are not authorized"),
     "go_to_details" : MessageLookupByLibrary.simpleMessage("Detail"),
     "news" : MessageLookupByLibrary.simpleMessage("News"),
+    "pa" : MessageLookupByLibrary.simpleMessage("PA"),
+    "pf" : MessageLookupByLibrary.simpleMessage("PF"),
     "phone" : MessageLookupByLibrary.simpleMessage("Phone: xxx-xx-xx-xx"),
     "schedule_days" : MessageLookupByLibrary.simpleMessage("Tuesday - Wednesday - Thursday"),
     "schedule_hours" : MessageLookupByLibrary.simpleMessage("20:30 - 22:00"),

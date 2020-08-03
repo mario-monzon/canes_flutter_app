@@ -1,4 +1,5 @@
-import 'package:canes_app/widget/scores/score_list_widget.dart';
+import 'package:canes_app/widget/scores/scores/score_list_widget.dart';
+import 'package:canes_app/widget/scores/standings/StandingListWidget.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/design_breakpoints.dart';
@@ -24,19 +25,35 @@ class Tab3Screen extends StatelessWidget {
             builder: (context) {
               return (context) => LayoutBuilder(
                   builder: (context, constraints) => Container(
-                      child: Scaffold(
-                          appBar: AppBar(
-                            title: Text(S.of(context).tab3),
-                            leading: constraints.maxHeight >= Breakpoints.br480
-                                ? null
-                                : IconButton(
-                                    icon: Icon(Icons.menu),
-                                    onPressed: () {
-                                      Scaffold.of(context).openDrawer();
-                                    },
-                                  ),
-                          ),
-                          body: ScoreListWidget())));
+                          child: DefaultTabController(
+                        length: 2,
+                        child: Scaffold(
+                            appBar: AppBar(
+                                title: Text(S.of(context).tab3),
+                                leading:
+                                    constraints.maxHeight >= Breakpoints.br480
+                                        ? null
+                                        : IconButton(
+                                            icon: Icon(Icons.menu),
+                                            onPressed: () {
+                                              Scaffold.of(context).openDrawer();
+                                            },
+                                          ),
+                                bottom: TabBar(
+                                  tabs: <Widget>[
+                                    Tab(text: 'Standing'),
+                                    Tab(
+                                      text: 'Scores',
+                                    )
+                                  ],
+                                )),
+                            body: TabBarView(
+                              children: <Widget>[
+                                StandingListWidget(),
+                                ScoreListWidget()
+                              ],
+                            )),
+                      )));
             }));
   }
 }

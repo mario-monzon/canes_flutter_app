@@ -222,6 +222,26 @@ class S {
       args: [],
     );
   }
+
+  /// `PA`
+  String get pa {
+    return Intl.message(
+      'PA',
+      name: 'pa',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PF`
+  String get pf {
+    return Intl.message(
+      'PF',
+      name: 'pf',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

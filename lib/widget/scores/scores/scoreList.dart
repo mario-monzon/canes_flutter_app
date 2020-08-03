@@ -1,6 +1,6 @@
 import 'package:canes_app/model/match_model.dart';
 import 'package:canes_app/repository/resource.dart';
-import 'package:canes_app/widget/scores/score_detail.dart';
+import 'package:canes_app/widget/scores/scores/score_detail.dart';
 import 'package:flutter/material.dart';
 
 class ScoreList extends StatelessWidget {

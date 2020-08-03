@@ -2,7 +2,7 @@ import 'package:canes_app/design/img.dart';
 import 'package:canes_app/model/match_model.dart';
 import 'package:canes_app/model/team_model.dart';
 import 'package:canes_app/repository/resource.dart';
-import 'package:canes_app/widget/scores/scoreList.dart';
+import 'package:canes_app/widget/scores/scores/scoreList.dart';
 import 'package:flutter/material.dart';
 
 class ScoreListWidget extends StatefulWidget {
